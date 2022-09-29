@@ -1,0 +1,41 @@
+#Bienvenue{
+	-fx-font-weight: bold;
+	-fx-font-size: 20px;
+}
+Text, Button, Label, TextProperty, MenuItem{
+	-fx-font-family: 'Copperplate Gothic Light';
+	-fx-font-size: 16px;
+}
+TextField{
+	-fx-font-family: 'Verdana';
+	-fx-font-size: 14px;
+}
+Button{
+	-fx-background-color:#c9e1f5;
+}
+Button:hover{
+	-fx-cursor:hand;
+	-fx-text-fill:#ffffff;
+}
+Button:pressed{
+	-fx-cursor:wait;
+}
+Button:disabled{
+	-fx-background-color: #abb0af;
+}
+.root{
+	-fx-background-color:#ffffff;
+}
+#admin{
+	-fx-font-family: 'Copperplate Gothic Light';
+	-fx-font-size: 16px;
+	-fx-padding:10px;
+	-fx-background-color:#c9e1f5;
+}
+#admin:hover{
+	-fx-cursor:hand;
+	-fx-text-fill:#ffffff;
+}
+#admin:pressed{
+	-fx-cursor:wait;
+}

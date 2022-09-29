@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefWidth="733.0" stylesheets="@../css/statistant.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.statistant.ligue1.view.resources.fxml.AuthentificationOverviewController">
+   <top>
+      <Text id="Bienvenue" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue ! Pour accéder à l'application ainsi qu'à tout son contenu, merci de vous identifier." wrappingWidth="876.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Text>
+   </top>
+   <bottom>
+      <ButtonBar maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="connection" defaultButton="true" mnemonicParsing="false" onAction="#handleConnect" text="Connexion">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Button>
+        </buttons>
+      </ButtonBar>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant :" textAlignment="CENTER" />
+            <TextField fx:id="login" maxWidth="-Infinity" prefWidth="175.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe :" />
+            <PasswordField fx:id="password" maxWidth="-Infinity" prefWidth="175.0" />
+            <Button fx:id="forgottenPassword" mnemonicParsing="false" onAction="#handleForgottenPassword" text="J'ai oublié mon mot de passe">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>
