@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="731.0" prefWidth="785.0" stylesheets="@../css/statistant.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.statistant.ligue1.view.resources.fxml.NewMatchOverviewController">
+   <center>
+      <GridPane alignment="CENTER" hgap="2.0" vgap="4.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="249.0" text="Score :" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="37.0" prefWidth="263.0" text="Victoire de l'équipe à domicile ?" textAlignment="CENTER" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="264.0" text="Victoire de l'équipe à l'extérieur ?" textAlignment="CENTER" GridPane.rowIndex="6">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="265.0" text="Match nul ?" textAlignment="CENTER" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="267.0" text="Match important pour l'équipe à domicile ?" textAlignment="CENTER" GridPane.rowIndex="8">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="268.0" text="Match important pour l'équipe à l'extérieur ?" textAlignment="CENTER" GridPane.rowIndex="9">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="272.0" text="L'équipe à domicile est mieux classée ?" textAlignment="CENTER" GridPane.rowIndex="7">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleValidate" text="Valider" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10">
+            <cursor>
+                  <Cursor fx:constant="HAND" />
+            </cursor>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <TextField fx:id="score" alignment="CENTER" maxWidth="-Infinity" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="96.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextArea fx:id="comment" prefWidth="325.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextArea>
+            <TextField fx:id="homeTeamWin" disable="true" editable="false" maxWidth="-Infinity" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="draw" disable="true" editable="false" maxWidth="-Infinity" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="awayTeamWin" disable="true" editable="false" maxWidth="-Infinity" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="homeTeamHasABetterStanding" disable="true" editable="false" maxWidth="-Infinity" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="isAnImportantGameForHomeTeam" disable="true" editable="false" maxWidth="-Infinity" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="isAnImportantGameForAwayTeam" disable="true" editable="false" maxWidth="-Infinity" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <MenuButton id="Journey" fx:id="journey" mnemonicParsing="false" text="Numéro" GridPane.columnIndex="1">
+              <items>
+                <MenuItem fx:id="un" mnemonicParsing="false" onAction="#handleJourneyUn" text="1" />
+                <MenuItem fx:id="deux" mnemonicParsing="false" onAction="#handleJourneyDeux" text="2" />
+                  <MenuItem fx:id="trois" mnemonicParsing="false" onAction="#handleJourneyTrois" text="3" />
+                  <MenuItem fx:id="quatre" mnemonicParsing="false" onAction="#handleJourneyQuatre" text="4" />
+                  <MenuItem fx:id="cinq" mnemonicParsing="false" onAction="#handleJourneyCinq" text="5" />
+                  <MenuItem fx:id="six" mnemonicParsing="false" onAction="#handleJourneySix" text="6" />
+                  <MenuItem fx:id="sept" mnemonicParsing="false" onAction="#handleJourneySept" text="7" />
+                  <MenuItem fx:id="huit" mnemonicParsing="false" onAction="#handleJourneyHuit" text="8" />
+                  <MenuItem fx:id="neuf" mnemonicParsing="false" onAction="#handleJourneyNeuf" text="9" />
+                  <MenuItem fx:id="dix" mnemonicParsing="false" onAction="#handleJourneyDix" text="10" />
+                  <MenuItem fx:id="onze" mnemonicParsing="false" onAction="#handleJourneyOnze" text="11" />
+                  <MenuItem fx:id="douze" mnemonicParsing="false" onAction="#handleJourneyDouze" text="12" />
+                  <MenuItem fx:id="treize" mnemonicParsing="false" onAction="#handleJourneyTreize" text="13" />
+                  <MenuItem fx:id="quatorze" mnemonicParsing="false" onAction="#handleJourneyQuatorze" text="14" />
+                  <MenuItem fx:id="quinze" mnemonicParsing="false" onAction="#handleJourneyQuinze" text="15" />
+                  <MenuItem fx:id="seize" mnemonicParsing="false" onAction="#handleJourneySeize" text="16" />
+                  <MenuItem fx:id="dixSept" mnemonicParsing="false" onAction="#handleJourneyDixSept" text="17" />
+                  <MenuItem fx:id="dixHuit" mnemonicParsing="false" onAction="#handleJourneyDixHuit" text="18" />
+                  <MenuItem fx:id="dixNeuf" mnemonicParsing="false" onAction="#handleJourneyDixNeuf" text="19" />
+                  <MenuItem fx:id="vingt" mnemonicParsing="false" onAction="#handleJourneyVingt" text="20" />
+                  <MenuItem fx:id="vingtEtUn" mnemonicParsing="false" onAction="#handleJourneyVingtEtUn" text="21" />
+                  <MenuItem fx:id="vingtDeux" mnemonicParsing="false" onAction="#handleJourneyVingtDeux" text="22" />
+                  <MenuItem fx:id="vingtTrois" mnemonicParsing="false" onAction="#handleJourneyVingtTrois" text="23" />
+                  <MenuItem fx:id="vingtQuatre" mnemonicParsing="false" onAction="#handleJourneyVingtQuatre" text="24" />
+                  <MenuItem fx:id="vingtCinq" mnemonicParsing="false" onAction="#handleJourneyVingtCinq" text="25" />
+                  <MenuItem fx:id="vingtSix" mnemonicParsing="false" onAction="#handleJourneyVingtSix" text="26" />
+                  <MenuItem fx:id="vingtSept" mnemonicParsing="false" onAction="#handleJourneyVingtSept" text="27" />
+                  <MenuItem fx:id="vingtHuit" mnemonicParsing="false" onAction="#handleJourneyVingtHuit" text="28" />
+                  <MenuItem fx:id="vingtNeuf" mnemonicParsing="false" onAction="#handleJourneyVingtNeuf" text="29" />
+                  <MenuItem fx:id="trente" mnemonicParsing="false" onAction="#handleJourneyTrente" text="30" />
+                  <MenuItem fx:id="trenteEtUn" mnemonicParsing="false" onAction="#handleJourneyTrenteEtUn" text="31" />
+                  <MenuItem fx:id="trenteDeux" mnemonicParsing="false" onAction="#handleJourneyTrenteDeux" text="32" />
+                  <MenuItem fx:id="trenteTrois" mnemonicParsing="false" onAction="#handleJourneyTrenteTrois" text="33" />
+                  <MenuItem fx:id="trenteQuatre" mnemonicParsing="false" onAction="#handleJourneyTrenteQuatre" text="34" />
+                  <MenuItem fx:id="trenteCinq" mnemonicParsing="false" onAction="#handleJourneyTrenteCinq" text="35" />
+                  <MenuItem fx:id="trenteSix" mnemonicParsing="false" onAction="#handleJourneyTrenteSix" text="36" />
+                  <MenuItem fx:id="trenteSept" mnemonicParsing="false" onAction="#handleJourneyTrenteSept" text="37" />
+                  <MenuItem fx:id="trenteHuit" mnemonicParsing="false" onAction="#handleJourneyTrenteHuit" text="38" />
+              </items>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="69.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </MenuButton>
+            <MenuButton fx:id="homeTeamPossibilities" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="45.0" prefWidth="262.0" text="Equipe à domicile" textAlignment="RIGHT" GridPane.rowIndex="2">
+              <items>
+                <MenuItem fx:id="asm1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceASM" text="AS Monaco" />
+                <MenuItem fx:id="asse1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceASSE" text="AS Saint-Etienne" />
+                  <MenuItem fx:id="dfco1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceDFCO" text="Dijon FCO" />
+                  <MenuItem fx:id="fcgb1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceFCGB" text="FC Girondins de Bordeaux" />
+                  <MenuItem fx:id="fcl1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceFCL" text="FC Lorient" />
+                  <MenuItem fx:id="fcm1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceFCM" text="FC Metz" />
+                  <MenuItem fx:id="fcn1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceFCN" text="FC Nantes" />
+                  <MenuItem fx:id="losc1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceLOSC" text="Lille OSC" />
+                  <MenuItem fx:id="mhsc1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceMHSC" text="Montpellier Hérault Sport Club" />
+                  <MenuItem fx:id="no1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceNO" text="Nîmes Olympique" />
+                  <MenuItem fx:id="ogcn1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceOGCN" text="OGC Nice" />
+                  <MenuItem fx:id="ol1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceOL" text="Olympique Lyonnais" />
+                  <MenuItem fx:id="om1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceOM" text="Olympique de Marseille" />
+                  <MenuItem fx:id="psg1" mnemonicParsing="false" onAction="#handleHomeTeamChoicePSG" text="Paris-Saint-Germain" />
+                  <MenuItem fx:id="rcl1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceRCL" text="Racing Club de Lens" />
+                  <MenuItem fx:id="rcs1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceRCS" text="Racing Club de Strasbourg" />
+                  <MenuItem fx:id="sb291" mnemonicParsing="false" onAction="#handleHomeTeamChoiceSB29" text="Stade Brestois 29" />
+                  <MenuItem fx:id="sco1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceSCO" text="SCO Angers" />
+                  <MenuItem fx:id="sdr1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceSDR" text="Stade de Reims" />
+                  <MenuItem fx:id="srfc1" mnemonicParsing="false" onAction="#handleHomeTeamChoiceSRFC" text="Stade Rennais" />
+              </items>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </MenuButton>
+            <MenuButton fx:id="awayTeamPossibilities" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="253.0" text="Equipe à l'extérieur" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <items>
+                <MenuItem fx:id="asm2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceASM" text="AS Monaco" />
+                <MenuItem fx:id="asse2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceASSE" text="AS Saint-Etienne" />
+                  <MenuItem fx:id="dfco2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceDFCO" text="Dijon FCO" />
+                  <MenuItem fx:id="fcgb2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceFCGB" text="FC Girondins de Bordeaux" />
+                  <MenuItem fx:id="fcl2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceFCL" text="FC Lorient" />
+                  <MenuItem fx:id="fcm2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceFCM" text="FC Metz" />
+                  <MenuItem fx:id="fcn2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceFCN" text="FC Nantes" />
+                  <MenuItem fx:id="losc2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceLOSC" text="Lille OSC" />
+                  <MenuItem fx:id="mhsc2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceMHSC" text="Montpellier Hérault Sport Club" />
+                  <MenuItem fx:id="no2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceNO" text="Nîmes Olympique" />
+                  <MenuItem fx:id="ogcn2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceOGCN" text="OGC Nice" />
+                  <MenuItem fx:id="ol2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceOL" text="Olympique Lyonnais" />
+                  <MenuItem fx:id="om2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceOM" text="Olympique de Marseille" />
+                  <MenuItem fx:id="psg2" mnemonicParsing="false" onAction="#handleAwayTeamChoicePSG" text="Paris-Saint-Germain" />
+                  <MenuItem fx:id="rcl2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceRCL" text="Racing Club de Lens" />
+                  <MenuItem fx:id="rcs2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceRCS" text="Racing Club de Strasbourg" />
+                  <MenuItem fx:id="sb292" mnemonicParsing="false" onAction="#handleAwayTeamChoiceSB29" text="Stade Brestois 29" />
+                  <MenuItem fx:id="sco2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceSCO" text="SCO Angers" />
+                  <MenuItem fx:id="sdr2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceSDR" text="Stade de Reims" />
+                  <MenuItem fx:id="srfc2" mnemonicParsing="false" onAction="#handleAwayTeamChoiceSRFC" text="Stade Rennais" />
+               </items>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </MenuButton>
+            <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="265.0" text="Journée :" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="37.0" prefWidth="271.0" text="Commentaire :" textAlignment="RIGHT" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

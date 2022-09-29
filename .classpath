@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/mysql-backup4j-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/org.slf4j.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/mysql-connector-java-8.0.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/zt-zip-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/commons-lang3-3.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/ooxml-schemas-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/commons-compress-1.20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/org.apache.poi.xwpf.converter.core-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/org.apache.servicemix.bundles.poi-4.1.2_1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/org.apache.servicemix.bundles.poi-4.1.2_2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/slf4j-api-1.7.28.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/zt-exec-1.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/techn/Downloads/dom4j-1.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
